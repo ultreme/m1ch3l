@@ -20,6 +20,9 @@ function commands_list()
 
 function command_get_name($input)
 {
+	# Remove potential null-bytes
+	$input = str_replace("\0", "", $input);
+	
 	if (preg_match('/^[a-zA-Z0-9]+$/', $input))
 	{
 		return "$input" . ".cmd";
