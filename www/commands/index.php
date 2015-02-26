@@ -25,7 +25,7 @@ function command_get_name($input)
 	
 	if (preg_match('/^[a-zA-Z0-9]+$/', $input))
 	{
-		return "$input" . ".cmd";
+		return strtolower("$input") . ".cmd";
 	}
 
 	return NULL;
