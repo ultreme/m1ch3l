@@ -1,0 +1,5 @@
+*/5 * * * * /home/mxs/code/m1ch3l/misc/pull-commands.bash
+*/5 * * * * /home/mxs/code/m1ch3l/misc/push-commands.bash
+29 0 * * * /home/m1ch3l/m1ch3l/crons/il-est-minuit-trente.sh
+23 8 * * * /home/m1ch3l/m1ch3l/crons/bonjour-du-matin.sh
+15 12 * * * /home/m1ch3l/m1ch3l/crons/il-faut-manger.sh
