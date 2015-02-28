@@ -12,4 +12,8 @@ title=$(curl -s "http://62.210.180.173:12348/?action=infos&format=json" | python
 music=$(echo $artist$title | tr ' ' '%20')
 url=$google$music
 
+echo "$se 1 PRIVMSG $ch :${us}> $google" | nc -q 1 localhost $po
+echo "$se 1 PRIVMSG $ch :${us}> $artist" | nc -q 1 localhost $po
+echo "$se 1 PRIVMSG $ch :${us}> $title" | nc -q 1 localhost $po
+echo "$se 1 PRIVMSG $ch :${us}> $music" | nc -q 1 localhost $po
 echo "$se 1 PRIVMSG $ch :${us}> $url" | nc -q 1 localhost $po
