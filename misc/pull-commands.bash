@@ -10,6 +10,7 @@ fi
 ( cd m1ch3l && git pull)
 
 cp ~/m1ch3l/irc/public/* /home/m1ch3l/gorobot/root/scripts/public/
+chmod +x /home/m1ch3l/gorobot/root/scripts/public/*.cmd
 
 # autoreload crontab
 crontab -r
