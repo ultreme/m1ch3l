@@ -15,7 +15,7 @@ def send_irc(what):
     sock.close()
 
 def hello():
-    args = sys.argv[5:]
+    args = sys.argv[4:]
     if not len(args):
         send_irc('salut tout court')
     else:
