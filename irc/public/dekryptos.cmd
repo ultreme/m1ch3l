@@ -6,4 +6,4 @@ import sys
 
 
 if __name__ == '__main__':
-    send_irc('Dekryptos: '.format(dekryptos(' '.join(sys.argv[5:]))))
+    send_irc('Dekryptos: {}'.format(dekryptos(' '.join(sys.argv[5:]))))

@@ -101,4 +101,4 @@ def send_irc(what):
 
 
 if __name__ == '__main__':
-    send_irc('Kryptos: '.format(kryptos(' '.join(sys.argv[5:]))))
+    send_irc('Kryptos: {}'.format(kryptos(' '.join(sys.argv[5:]))))
