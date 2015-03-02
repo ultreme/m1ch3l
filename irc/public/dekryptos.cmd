@@ -74,7 +74,7 @@ mapping = {
 inv_mapping = {v: k for k, v in mapping.items()}
 
 
-def decryptos(string):
+def dekryptos(string):
     output = ''
     for i in range(len(string)):
         output += inv_mapping.get(string[i], string[i])
