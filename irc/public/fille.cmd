@@ -37,7 +37,7 @@ function	grand_garcon()
 
   foreach ($params as $garcon)
   {
-	send_message("t'es une vrai grande fille " . $garcon);
+	send_message("t'es une vraie grande fille " . $garcon);
   }
 }
 
