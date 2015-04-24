@@ -4,4 +4,11 @@ se=$2
 ch=$3
 us=$4
 
-echo "$se 1 PRIVMSG $ch :${us}> taliban !" | nc -q 1 localhost $po
+paroles="taliban !
+djihadiste !
+hipster !
+bucheron !"
+
+text=$(echo "$paroles" | sort -R | head -1)
+
+echo "$se 1 PRIVMSG $ch :${us}> $text" | nc -q 1 localhost $po
