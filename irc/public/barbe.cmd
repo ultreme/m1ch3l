@@ -7,7 +7,9 @@ us=$4
 paroles="taliban !
 djihadiste !
 hipster !
-bucheron !"
+bucheron !
+pere noel !
+à papa !"
 
 text=$(echo "$paroles" | sort -R | head -1)
 
